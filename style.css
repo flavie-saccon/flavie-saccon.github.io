@@ -134,11 +134,7 @@ h4{
   background-color: white; /* Fond noir */
 }
 
-@media (max-width: 768px) {
-  .grid-item {
-      flex: 1 1 100%; /* 1 colonne sur téléphones */
-  }
-}
+
 /* Quand on clique */
 .texte-interactif:active {
   color: #000;
@@ -183,4 +179,17 @@ h4{
 
   .index{
 
+  }
+
+  @media (min-width:700px) {
+    .grid{
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+
+  @media (min-width:700px) {
+    .grid{
+      grid-template-columns: 30vw 1fr;
+    }
   }
