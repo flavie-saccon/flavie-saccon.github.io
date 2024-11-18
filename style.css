@@ -1,21 +1,52 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #000;
+  font-family: "neue-kabel", sans-serif;
+  font-style: normal;
+  color: #fff;
+  background-color: #000;
 }
+
 img{
   Max-width: 100%;
   height: auto;
   display: block;
 }
 
+
 a{
   text-decoration: none;
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
 }
 
+h1{
+  font-weight: 700;
+  font-size: 20px;
+  color: #fff;
+}
+
+h2{
+font-family: "bovine-mvb", sans-serif;
+font-weight: 400;
+font-style: normal;
+  font-size: 50px;
+  color: #fff;
+}
+
+h3{
+  font-weight: 400;
+  font-style: italic;
+  font-size: 20px;
+}
+
+h4{
+  font-size: 14px;
+}
 
   .wrapper {
     display: grid;
   }  
+
 
 .header{
     /* display: grid;
@@ -34,16 +65,23 @@ a{
   top: 20px;
   /* align-items: start; */
   grid-template-rows: min-content min-content;
+  color:white;
   /* height: 99vh; */
 }
-.header-title{
-    color: #fff;
-    justify-items: center;
+
+
+.header-title a{
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.aboutContact{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
 }
 
 .header-nav{
   display: grid;
-
 }
 
 .header-nav a{
@@ -51,7 +89,9 @@ a{
   padding:12px;
   border-bottom: 1px solid #fff;
 
+
 }
+
 
 
 
@@ -68,6 +108,7 @@ a{
   display: grid;
   max-width: 1280px;
   margin: 0 auto;
+  padding:0 20px 20px;
   /* grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); */
   grid-template-columns: 250px 1fr;
   justify-content: center;
@@ -75,14 +116,37 @@ a{
   gap: 20px;
 }
 
-
-.projects{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-items: center;
-    padding: 45px;
+.texte-interactif {
+  color: white; /* Couleur du texte par défaut */
+  background-color: black; /* Fond transparent par défaut */
+  padding: 10px;
+  display: inline-block;
+  transition: all 0.3s ease; /* Animation douce */
+  /* border: 1px solid black;  */
+  /* Bordure pour encadrer le texte */
+  cursor: pointer; /* Curseur interactif */
 }
 
+/* Quand on survole */
+.texte-interactif:hover {
+  color: black; /* Le texte devient blanc */
+  background-color: white; /* Fond noir */
+}
+
+/* Quand on clique */
+.texte-interactif:active {
+  color: #000;
+  background-color: rgb(255, 255, 255); /* Fond gris en cliquant */
+}
+
+/* a:focus {
+  color: black;
+  background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: black;
+  outline: none; 
+  Retirer l'effet de focus natif
+} */
 
 .item{
     display:grid;
