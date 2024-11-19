@@ -150,12 +150,21 @@ h4{
   Retirer l'effet de focus natif
 } */
 
+
+
 @media (max-width: 768px) {
-  .container {
+  .index {
       grid-template-columns: 1fr; /* Une seule colonne */
       grid-auto-rows: auto; /* Chaque élément occupe une rangée */
   }
+
+  .header {
+    position: static;
+    height: auto;
+  }
 }
+
+
 
 .item{
     display:grid;
@@ -191,12 +200,5 @@ h4{
   @media (min-width:700px) {
     .grid{
       grid-template-columns: 1fr 1fr;
-    }
-  }
-
-
-  @media (min-width:700px) {
-    .grid{
-      grid-template-columns: 30vw 1fr;
     }
   }
