@@ -1,0 +1,33 @@
+@font-face {
+    font-family:"PicNic" ;
+    src: url(webfonts/PicNic.woff2) format("woff2"),
+         url(webfonts/PicNic.woff) format("woff");
+}
+
+body{
+    background:black;
+    font-family: Arial, Helvetica, sans-serif sans-serif;
+}
+
+h1,h2,h3,h4{
+    color:white;
+    font-family: "PicNic", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+}
+
+p{
+    color:white;
+    font-size: 20px;
+    font-family: "Urbanist", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+/* les filets */
+/* la grille */
+/* la typographie */
